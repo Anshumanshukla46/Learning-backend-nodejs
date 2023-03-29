@@ -1,0 +1,84 @@
+1. JS script can be excuted on backend server using node.js
+node.js is open source (run javascript on server BIG ADVANTAGE)
+
+why?
+js in entire stack.
+a lot of module are available
+
+can run js on terminal as 
+node and exit by .exit
+
+node work on REPL (read evaluate print loop)
+_ is the previous variable
+
+
+2. as in we have used bootstarp, mui, tailwindcss so similar to that we have module
+
+module can be three types
+1. built in
+2. third party (using npm)
+2. custom module
+
+RUN USING node part1.js (like)
+
+5. npm is "node package manager" help in installing, updating, managing nodes.
+
+we often need to add some packages so for that we could use npm.
+
+npm init (to create new node package)
+-> "package" is external modules
+-> "node_module" will have all modules which you have installed to use in the package
+
+npm install express
+npm uninstall express
+
+if node_module deleted then use -> npm install to get that.
+
+if want to add some specific version
+dependencies (installing)
+-> npm install slugify@1.3.5
+here 1.3.5 is major(version), minor(function), patch(bug fixes)
+-> npm i module (shortcut)
+
+
+// 1.0.0 initial
+// 1.0.1 bug fixes
+// 1.1.0 feature added (previous working)
+// 2.0.0 upadte to use
+
+DEV DEPENDENCIES are those dependencies needed during development and testing of application but not needed in production environment
+
+Some modules are only needed during the development process, such as testing frameworks or code linting tools.
+
+how to install -
+
+npm install nodemon --save-dev (now this will shown in package.json)
+
+npm install nodemon --global (now package will be available in production and development both but not recommended for production environments, as it can create dependencies and version conflicts that are difficult to manage.)
+
+
+while "nodemon" is used when we save the page it will refresh the page
+just use > nodemon module_location
+
+"slugify": "^1.3.5" (minimum version is 1.3.5 now if new update came then using npm update it will fix add new one)
+
+"slugify": ">1.3.5" (greates version less that 1.3.5 now if new update came then using npm update it will make it new one)
+
+"slugify": "~1.3.5" (exact version now if new update came then using npm update it will "not" make it new one)
+
+6. Postman allow user to make http requests and make api responses.
+It provide feature like organised collections, automated testing etc...
+
+express - mostly it uses app.js as one of starting point
+
+Express is a popular web application framework for nodejs. before this we were using custom backedn and fetching each pages and using if/else to show this/that when url (ROUTING) is similar to this etc...
+
+Now Express will help in api's by giving some set of features which will handle ROUTING, http requests, responses .
+
+With Express, developers can easily create RESTful APIs and web applications that can handle various HTTP methods like GET, POST, PUT, DELETE, etc. It also provides various utilities and features that make working with Node.js easier. IT IS A OPEN source.
+
+now run that app as- node app.js
+or run |>
+or install nodemon then use "nodemon app.js"
+
+
